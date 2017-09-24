@@ -9,6 +9,7 @@
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spark.version>2.0.0</spark.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -17,10 +18,18 @@
 			<version>2.10.6</version>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.spark</groupId>
-			<artifactId>spark-core_2.10</artifactId>
-			<version>2.0.0</version>
+		    <groupId>org.apache.spark</groupId>
+		    <artifactId>spark-sql_2.10</artifactId>
+		    <version>2.0.0</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.spark/spark-hive_2.10 -->
+		<dependency>
+		    <groupId>org.apache.spark</groupId>
+		    <artifactId>spark-hive_2.10</artifactId>
+		    <version>2.0.0</version>
+		</dependency>
+		
+		
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
